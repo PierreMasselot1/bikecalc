@@ -11,7 +11,7 @@
 		{#each pages as page}
 			<a
 				href={page.path}
-				class="rounded-lg bg-slate-600 px-4 py-2 text-center text-white transition hover:bg-slate-800"
+				class="rounded-lg bg-slate-600 px-4 py-2 text-center text-lg text-white transition hover:bg-slate-800"
 			>
 				{page.name}
 			</a>
