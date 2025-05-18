@@ -12,7 +12,6 @@
 				labels: ['20mm', '25mm', '30mm', '35mm'],
 				datasets: [
 					{
-						label: 'Ideal Pressure (psi)',
 						data: [110, 100, 90, 80],
 						borderColor: 'rgb(75, 192, 192)',
 						tension: 0.1
@@ -47,7 +46,7 @@
 	];
 </script>
 
-<div class="flex items-center">
+<div class="flex w-full items-center">
 	<div class="flex self-start">
 		{#each bike_types as bike}
 			<button class="{bike.c} m-2 rounded-md px-4 py-2">
@@ -55,5 +54,7 @@
 			</button>
 		{/each}
 	</div>
-	<canvas id="myChart" class="w-600" height="400"></canvas>
+	<div class="w-4 w-full">
+		<canvas id="myChart" class="h-full w-fit"></canvas>
+	</div>
 </div>
